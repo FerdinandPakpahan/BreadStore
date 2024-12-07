@@ -208,7 +208,7 @@
             const message = `Terima kasih atas pesanan Anda!\n\nNama: ${name}\nNomor Telepon: ${phone}\nAlamat: ${address}\nEmail: ${email}\n\nDetail Pesanan:\n${orderDetails}\n\nTotal Harga: Rp ${totalPrice}`;
 
             if (platform === 'whatsapp') {
-                const whatsappUrl = `https://api.whatsapp.com/send?phone=087716740410&text=${encodeURIComponent(message)}`;
+                const whatsappUrl = `https://api.whatsapp.com/send?phone=+6287716740410&text=${encodeURIComponent(message)}`;
                 window.open(whatsappUrl, '_blank');
             }
 
@@ -226,4 +226,5 @@
     </script>
 </body>
 </html>
+
 
